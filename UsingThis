@@ -1,0 +1,27 @@
+package thissuper;
+
+class Rectangle
+{
+    int length;
+    int breadth;
+
+    
+    Rectangle(int l,int b)
+    {
+        this.length=l;
+        this.breadth=b;
+    }
+    void display()
+    {
+        System.out.println("Length :"+this.length);
+        System.out.println("Breadth :"+this.breadth);
+    }
+}
+
+public class ThisSuper {
+
+    public static void main(String[] args) {
+        
+    }
+    
+}
