@@ -1,0 +1,33 @@
+package ParameterisedConstructor ;
+
+class Parent 
+{
+    public Parent()
+    {
+        System.out.println("Non-param of Parent");
+    }
+    Parent(int x)
+    {
+        System.out.println("Param of Parent");
+    }
+}
+class Child extends Parent
+{
+    public Child()
+    {
+        System.out.println("Non-param of Child");
+    }
+    Child(int y)
+    {
+        System.out.println("Param of Child");
+    }
+}
+
+public class ParameterisedConstructor 
+{
+    public static void main(String[] args) 
+    {
+        Child c=new Child(15);
+    }
+    
+}
