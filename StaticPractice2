@@ -1,0 +1,75 @@
+package staticpract;
+
+
+public class StaticPract {
+    static
+    {
+        System.out.println("Block 1");
+    }
+
+    public static void main(String[] args) 
+    {
+     System.out.println("Main");
+              //first it print Block1 and Block2 then at last it prints Main method
+    }
+    static
+    {
+        System.out.println("Block 2");
+    }
+    
+}
+
+
+// Method 2
+
+package staticpract;
+
+class My
+{
+     static
+    {
+        System.out.println("Block 1");
+    }
+      static
+    {
+        System.out.println("Block 2");
+    }
+}
+
+public class StaticPract {
+   
+    public static void main(String[] args) 
+    {
+     My m=new My();
+     System.out.println("Main");
+    }     
+}
+
+
+//Method 3
+
+
+package staticpract;
+
+class My
+{
+     static
+    {
+        System.out.println("Block 1");
+    }
+      static
+    {
+        System.out.println("Block 2");
+    }
+}
+
+public class StaticPract {
+   
+    public static void main(String[] args) 
+    {
+     
+     System.out.println("Main");
+     My m=new My();
+    }     
+}
+
